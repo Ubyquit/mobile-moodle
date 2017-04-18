@@ -10,11 +10,11 @@
         <form>
           <ion-input class="item item-input item-stacked-label">
             <ion-label>{{ 'mm.login.siteaddress' | translate }}</ion-label>
-            <input type="url" placeholder="ubyquit.com.mx/cursosus" name="site" value="http://ubyquit.com.mx/cursosus" ng-model="siteurl"mm-auto-focus  readonly>
+            <input type="url" name="site" value="http://ubyquit.com.mx/cursosus" readonly>
           </ion-input>
           <div class="item item-input padding">
-     <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
-   <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" >   mm-no-input-validation -->
+     <!--<button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button> mm-no-input-validation -->
+    <input type="submit" class="button" value="{{ 'mm.login.connect' | translate }}" >   
           </div>
         </form>
       </div>
